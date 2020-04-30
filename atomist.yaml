@@ -1,0 +1,56 @@
+#
+#  Copyright © 2020 Atomist, Inc.
+#
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+  
+skill:
+  name: atomist/package-npm-seed-skill
+  title: Seed for NPM-based Skills
+  version: 0.1.0
+  author: Atomist
+  description: Seed for NPM-based Skills
+  category:
+  technology:
+  license: Apache-2.0
+  homepage: https://github.com/atomist-seeds/package-npm-seed-skill
+  repository: https://github.com/atomist-seeds/package-npm-seed-skill.git
+  icon: https://images.atomist.com/logo/atomist-black-mark-small-2x.png
+ 
+  package:
+    use: atomist/package-npm-skill
+
+#resource_providers:
+#  - name: github
+#    description: GitHub
+#    type_name: GitHubAppResourceProvider
+#    min_required: 1
+#    max_allowed: 1
+#  - name: slack
+#    description: Slack
+#    type_name: SlackResourceProvider
+#    min_required: 0
+#    max_allowed: 1
+
+parameters:
+#  - repo_filter:
+#      name: repos
+#      display_name: Which repositories
+#      description: ''
+#      required: false
+
+artifacts:
+
+commands:
+
+subscriptions:
