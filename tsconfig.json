@@ -11,9 +11,9 @@
     "lib": [
       "DOM"
     ],
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": false,
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
