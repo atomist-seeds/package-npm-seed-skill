@@ -1,4 +1,12 @@
 # `atomist/package-npm-seed-skill`
+
+<!---atomist-skill-description:start--->
+
+tba
+
+<!---atomist-skill-description:end--->
+
+---
  
 <!---atomist-skill-readme:start--->
 

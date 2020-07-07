@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import { EventHandler } from "@atomist/skill/lib/handler";
-import { debug } from "@atomist/skill/lib/log";
+import { EventHandler, log } from "@atomist/skill";
+import { Configuration } from "../configuration";
 
-export const handler: EventHandler<any> = async ctx => {
-    debug("Incoming event: %s", JSON.stringify(ctx.data));
+export const handler: EventHandler<any, Configuration> = async ctx => {
+    log.debug("Incoming event: %s", JSON.stringify(ctx.data));
 };

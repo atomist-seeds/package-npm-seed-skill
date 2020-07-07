@@ -4,5 +4,4 @@
 codegen.yaml
 *.md
 tsconfig.json
-
 /test/**
