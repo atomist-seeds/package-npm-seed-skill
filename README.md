@@ -1,4 +1,4 @@
-# `atomist/package-npm-seed-skill`
+# `atomist/typescript-skill-seed`
 
 <!---atomist-skill-description:start--->
 
@@ -28,8 +28,8 @@ We recommand that you configure the **Slack** integration.
     
 2. **Don't risk letting sensitive secrets and credential sit in your code base for the taking!**
 
-To create feature requests or bug reports, create an [issue in the repository for this skill](https://github.com/atomist-seeds/package-npm-seed-skill/issues). 
-See the [code](https://github.com/atomist-seeds/package-npm-seed-skill) for the skill.
+To create feature requests or bug reports, create an [issue in the repository for this skill](https://github.com/atomist-seeds/typescript-skill-seed/issues). 
+See the [code](https://github.com/atomist-seeds/typescript-skill-seed) for the skill.
 
 <!---atomist-skill-readme:end--->
 
