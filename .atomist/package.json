@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@atomist/skill": "^0.1.0-master.20200702145252",
+    "fs-extra": "^9.0.1"
+  }
+}
