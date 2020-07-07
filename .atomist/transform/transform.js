@@ -7,7 +7,7 @@ exports.transform = async (p, params) => {
     const skillTs = (await fs.readFile(p.path("skill.ts"))).toString()
         .replace(/name:\s*".*seed"/g, `name: "${p.id.repo.toLowerCase()}"`)
         .replace(/namespace:\s*".*"/g, `namespace: "${ownerOrAtomist.toLowerCase()}"`)
-        .replace(/displayName:\s*".*"/g, `displayName: "${params.displayName}"`)
+        .replace(/displayName:\s*"Seed.*"/g, `displayName: "${params.displayName}"`)
         .replace(/author:\s*".*"/g, `author: "${p.id.owner}"`)
         .replace(/homepageUrl:\s*".*"/g, `homepageUrl: "https://github.com/${p.id.owner}/${p.id.repo}"`)
         .replace(/repositoryUrl:\s*".*"/g, `repositoryUrl: "https://github.com/${p.id.owner}/${p.id.repo}.git"`);
