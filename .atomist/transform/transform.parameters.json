@@ -1,0 +1,8 @@
+{
+  "displayName": {
+    "description": "Display name of new skill"
+  },
+  "description": {
+    "description": "Description of new skill"
+  }
+}
