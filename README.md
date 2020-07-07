@@ -7,7 +7,7 @@ tba
 <!---atomist-skill-description:end--->
 
 ---
- 
+
 <!---atomist-skill-readme:start--->
 
 # What it's useful for
@@ -16,19 +16,19 @@ tba
 
 Connect and configure this integration:
 
-* **GitHub**
-* **Slack**
+- **GitHub**
+- **Slack**
 
 The **GitHub** integration must be configured in order to use this skill. At least one repository must be selected.
-We recommand that you configure the **Slack** integration. 
+We recommand that you configure the **Slack** integration.
 
 # How to configure
 
 1. **Step 1**
-    
+
 2. **Don't risk letting sensitive secrets and credential sit in your code base for the taking!**
 
-To create feature requests or bug reports, create an [issue in the repository for this skill](https://github.com/atomist-seeds/typescript-skill-seed/issues). 
+To create feature requests or bug reports, create an [issue in the repository for this skill](https://github.com/atomist-seeds/typescript-skill-seed/issues).
 See the [code](https://github.com/atomist-seeds/typescript-skill-seed) for the skill.
 
 <!---atomist-skill-readme:end--->
@@ -36,7 +36,7 @@ See the [code](https://github.com/atomist-seeds/typescript-skill-seed) for the s
 ---
 
 Created by [Atomist][atomist].
-Need Help?  [Join our Slack workspace][slack].
+Need Help? [Join our Slack workspace][slack].
 
-[atomist]: https://atomist.com/ (Atomist - How Teams Deliver Software)
-[slack]: https://join.atomist.com/ (Atomist Community Slack) 
+[atomist]: https://atomist.com/ "Atomist - How Teams Deliver Software"
+[slack]: https://join.atomist.com/ "Atomist Community Slack"
