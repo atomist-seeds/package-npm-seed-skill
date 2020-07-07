@@ -20,8 +20,3 @@ exports.transform = async (p, params) => {
         .replace(/<!---atomist-skill-description:start--->[\s\S]*<!---atomist-skill-description:end--->/g, `<!---atomist-skill-description:start--->\n\n${params.description}\n\n<!---atomist-skill-description:end--->`);
     await fs.writeFile(p.path("README.md"), readmeMd);
 };
-
-exports.transform({
-    path: p => `${process.cwd()}/${p}`,
-    id: { owner: "atomist-skills", repo: "cd-test"},
-}, { displayName: "CD test", description: "CD test description" }).then().catch(e => console.error(e));
