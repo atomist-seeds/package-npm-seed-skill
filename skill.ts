@@ -14,48 +14,53 @@
  * limitations under the License.
  */
 
-import { parameter, ParameterType, resourceProvider, skill } from "@atomist/skill";
+import {
+	parameter,
+	ParameterType,
+	resourceProvider,
+	skill,
+} from "@atomist/skill";
 import { Configuration } from "./lib/configuration";
 
 export const Skill = skill<Configuration & { repos: any }>({
-    name: "typescript-skill-seed",
-    namespace: "atomist",
-    displayName: "Seed for TypeScript-based skills",
-    author: "Atomist",
-    categories: [],
-    license: "Apache-2.0",
-    homepageUrl: "https://github.com/atomist-seeds/typescript-skill-seed",
-    repositoryUrl: "https://github.com/atomist-seeds/typescript-skill-seed.git",
-    iconUrl: "file://docs/images/icon.svg",
+	name: "typescript-skill-seed",
+	namespace: "atomist",
+	displayName: "Seed for TypeScript-based skills",
+	author: "Atomist",
+	categories: [],
+	license: "Apache-2.0",
+	homepageUrl: "https://github.com/atomist-seeds/typescript-skill-seed",
+	repositoryUrl: "https://github.com/atomist-seeds/typescript-skill-seed.git",
+	iconUrl: "file://docs/images/icon.svg",
 
-    runtime: {
-        memory: 2048,
-        timeout: 540,
-    },
+	runtime: {
+		memory: 2048,
+		timeout: 540,
+	},
 
-    resourceProviders: {
-        github: resourceProvider.gitHub({ minRequired: 1 }),
-        chat: resourceProvider.chat({ minRequired: 0 }),
-    },
+	resourceProviders: {
+		github: resourceProvider.gitHub({ minRequired: 1 }),
+		chat: resourceProvider.chat({ minRequired: 0 }),
+	},
 
-    parameters: {
-        world: {
-            type: ParameterType.String,
-            displayName: "World",
-            description: "",
-            required: false,
-        },
-        repos: parameter.repoFilter(),
-    },
+	parameters: {
+		world: {
+			type: ParameterType.String,
+			displayName: "World",
+			description: "",
+			required: false,
+		},
+		repos: parameter.repoFilter(),
+	},
 
-    commands: [
-        {
-            name: "helloWorld",
-            displayName: "HelloWorld",
-            pattern: /^hello world$/,
-            description: "Simple hello world command",
-        },
-    ],
+	commands: [
+		{
+			name: "helloWorld",
+			displayName: "HelloWorld",
+			pattern: /^hello world$/,
+			description: "Simple hello world command",
+		},
+	],
 
-    subscriptions: ["file://graphql/subscription/*.graphql"],
+	subscriptions: ["file://graphql/subscription/*.graphql"],
 });

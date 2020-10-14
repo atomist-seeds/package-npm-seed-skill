@@ -18,5 +18,5 @@ import { CommandHandler, log } from "@atomist/skill";
 import { Configuration } from "../configuration";
 
 export const handler: CommandHandler<Configuration> = async ctx => {
-    log.debug("Incoming parameters: %s", JSON.stringify(ctx.parameters));
+	log.debug("Incoming parameters: %s", JSON.stringify(ctx.parameters));
 };
