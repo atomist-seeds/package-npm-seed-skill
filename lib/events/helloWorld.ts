@@ -18,5 +18,5 @@ import { EventHandler, log } from "@atomist/skill";
 import { Configuration } from "../configuration";
 
 export const handler: EventHandler<any, Configuration> = async ctx => {
-    log.debug("Incoming event: %s", JSON.stringify(ctx.data));
+	log.debug("Incoming event: %s", JSON.stringify(ctx.data));
 };

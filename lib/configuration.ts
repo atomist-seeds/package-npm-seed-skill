@@ -15,5 +15,5 @@
  */
 
 export interface Configuration {
-    world: string;
+	world: string;
 }
